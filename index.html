@@ -1,0 +1,83 @@
+<html>
+
+	<head>
+
+		<script>
+
+			function answer(){
+
+			var radio = document.getElementsByName("trivia");
+
+			var selection = false;
+
+			var message = "";
+
+			for( var i = 0; i < radio.length; i++) {
+
+			   if(radio[i].value == "Butt") {
+
+			      selection = true;
+
+			   } //end if statement
+
+			} //end for loop
+
+			if(selection == true) {
+
+			message = message + "<b><u>In a room small, find a chest with danger ahead!!!!</u></b>";
+			} else {
+
+			message = message + "<b><p style='color:red'>WRONG!!!!!!</p></b>";
+			}
+			document.getElementById("response").innerHTML = message;
+
+			} //end function answer
+		</script>
+
+		<title>
+
+			Info
+
+		</title>
+
+	</head>
+
+	<body>
+
+		<footer class="footer">
+
+			<b>
+				<center>
+					treashur hunt
+				</center>
+			</b>
+
+		</footer>
+			<header class="der">
+
+			<center>
+
+				treshrer
+			</center>
+
+		</header>
+		
+		<center>
+
+			<form>
+
+				<div id="response">
+
+				</div>
+				
+            <input type="password" name="trivia" value="">password
+
+            <br>
+            
+            <input id="bbackground" type="button" value="submit" onclick="answer()">	
+
+		</center>
+		
+	</body>
+
+</html>
